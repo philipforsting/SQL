@@ -125,7 +125,17 @@ GO
 
 /*Lägg till en ny användare i tabellen ”NewUsers”.*/
 INSERT INTO
-    NewUsers
+    NewUsers(
+        ID,
+        UserName,
+        Password,
+        FirstName,
+        LastName,
+        Email,
+        Phone,
+        Name,
+        Gender
+    )
 VALUES
     ('123456-7890',
      'kallea', 
