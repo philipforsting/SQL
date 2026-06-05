@@ -2,9 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy import text
 
 
-engine = create_engine(
-    "mssql+pyodbc://Forsting_studie/BookStoreDB?driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes"
-) 
+engine = create_engine("mssql+pyodbc://Forsting_studie/BookStoreDB?driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes") 
 
 query = text("""
 SELECT

@@ -3,14 +3,13 @@
 
 USE BookStoreDB;
 GO
-
 DROP TABLE IF EXISTS Ordrar;
 DROP TABLE IF EXISTS Kunder;
 DROP TABLE IF EXISTS LagerSaldo;
 DROP TABLE IF EXISTS Böcker;
 DROP TABLE IF EXISTS Butiker;
 DROP TABLE IF EXISTS Författare;
-DROP TABLE IF EXISTS TitlarPerFörfattare;
+DROP VIEW IF EXISTS TitlarPerFörfattare;
 GO
 
 CREATE TABLE Författare (
@@ -158,9 +157,9 @@ INSERT INTO Ordrar  (
     ButikID
 )
 VALUES
-    ('9780747532699', 'Anka', 'Storvägen 1'),
-    ('9780385086950', 'Pigg', 'Musikantvägen 2'),
-    ('9780307474278', 'Långben', 'Korsitaketvägen 3')
+    ('9780747532699', 1, 1),
+    ('9780385086950', 2, 2),
+    ('9780307474278', 3, 3)
 GO
 
 CREATE VIEW TitlarPerFörfattare
